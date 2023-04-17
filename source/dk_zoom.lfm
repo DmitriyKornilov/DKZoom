@@ -13,13 +13,16 @@ object ZoomForm: TZoomForm
   object TitleLabel: TLabel
     AnchorSideLeft.Control = Owner
     AnchorSideTop.Control = Owner
-    AnchorSideTop.Side = asrCenter
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
     Left = 3
-    Height = 15
-    Top = 8
+    Height = 31
+    Top = 0
     Width = 52
+    Anchors = [akTop, akLeft, akBottom]
     BorderSpacing.Left = 3
     Caption = 'Масштаб'
+    Layout = tlCenter
     ParentColor = False
   end
   object ZoomOutButton: TSpeedButton
@@ -149,16 +152,19 @@ object ZoomForm: TZoomForm
     AnchorSideLeft.Control = ZoomInButton
     AnchorSideLeft.Side = asrBottom
     AnchorSideTop.Control = Owner
-    AnchorSideTop.Side = asrCenter
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
     Left = 269
-    Height = 15
-    Top = 8
+    Height = 31
+    Top = 0
     Width = 31
     Alignment = taRightJustify
+    Anchors = [akTop, akLeft, akBottom]
     AutoSize = False
     BorderSpacing.Left = 12
     BorderSpacing.Right = 3
     Caption = '100 %'
+    Layout = tlCenter
     ParentColor = False
   end
 end
