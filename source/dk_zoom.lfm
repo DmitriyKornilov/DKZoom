@@ -7,18 +7,17 @@ object ZoomForm: TZoomForm
   Caption = 'ZoomForm'
   ClientHeight = 31
   ClientWidth = 385
-  DesignTimePPI = 120
   OnShow = FormShow
-  LCLVersion = '2.2.6.0'
+  LCLVersion = '2.2.4.0'
   Scaled = False
   object TitleLabel: TLabel
     AnchorSideLeft.Control = Owner
     AnchorSideTop.Control = Owner
     AnchorSideTop.Side = asrCenter
     Left = 3
-    Height = 20
-    Top = 5
-    Width = 63
+    Height = 15
+    Top = 8
+    Width = 52
     BorderSpacing.Left = 3
     Caption = 'Масштаб'
     ParentColor = False
@@ -29,7 +28,7 @@ object ZoomForm: TZoomForm
     AnchorSideTop.Control = Owner
     AnchorSideTop.Side = asrCenter
     Cursor = crHandPoint
-    Left = 78
+    Left = 67
     Height = 20
     Top = 5
     Width = 20
@@ -80,7 +79,7 @@ object ZoomForm: TZoomForm
     AnchorSideTop.Control = ZoomOutButton
     AnchorSideBottom.Control = ZoomOutButton
     AnchorSideBottom.Side = asrBottom
-    Left = 98
+    Left = 87
     Height = 20
     Top = 6
     Width = 150
@@ -102,7 +101,7 @@ object ZoomForm: TZoomForm
     AnchorSideTop.Control = Owner
     AnchorSideTop.Side = asrCenter
     Cursor = crHandPoint
-    Left = 248
+    Left = 237
     Height = 20
     Top = 5
     Width = 20
@@ -151,14 +150,15 @@ object ZoomForm: TZoomForm
     AnchorSideLeft.Side = asrBottom
     AnchorSideTop.Control = Owner
     AnchorSideTop.Side = asrCenter
-    Left = 280
-    Height = 20
-    Top = 5
-    Width = 44
+    Left = 269
+    Height = 15
+    Top = 8
+    Width = 31
     Alignment = taRightJustify
+    AutoSize = False
     BorderSpacing.Left = 12
     BorderSpacing.Right = 3
-    Caption = '0000%'
+    Caption = '100 %'
     ParentColor = False
   end
 end

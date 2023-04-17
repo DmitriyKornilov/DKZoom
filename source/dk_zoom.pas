@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons,
-  ComCtrls;
+  ComCtrls, DK_StrUtils;
 
 type
 
@@ -65,15 +65,9 @@ end;
 { TZoomForm }
 
 procedure TZoomForm.FormShow(Sender: TObject);
-var
-  W: Integer;
 begin
-  W:= ValueLabel.Width;
-  ValueLabel.Constraints.MinWidth:= W;
-  ValueLabel.Constraints.MaxWidth:= W;
-  ValueLabel.AutoSize:= False;
+  ValueLabel.Width:= SWidth('0000 %', ValueLabel.Font);
   SetValueLabel;
-  //ValueLabel.Caption:= '100 %';
   AutoSize:= True;
 end;
 
